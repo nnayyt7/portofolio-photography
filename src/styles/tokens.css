@@ -1,0 +1,13 @@
+:root {
+  color-scheme: dark;
+  --bg: #101010;
+  --text: #e8e5df;
+  --muted: #8c8882;
+  --accent: #ff4938;
+  --line: #34302c;
+  --outline: #48312c;
+  --font: 'Manrope Variable', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --gutter: clamp(20px, 2.1vw, 48px);
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}

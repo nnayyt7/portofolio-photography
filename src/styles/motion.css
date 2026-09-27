@@ -1,0 +1,13 @@
+@media (hover: hover) and (pointer: fine) {
+  html.reference-cursor, .reference-cursor body { cursor: crosshair; }
+  .reference-cursor a, .reference-cursor button { cursor: pointer; }
+  .photo-surface:not(.gpu-ready) img { transition: transform .8s var(--ease); }
+  .photo-button:hover .photo-surface:not(.gpu-ready) img { transform: scale(1.025); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  .photo-button:hover .photo-surface img { transform: none; }
+}
+html[data-motion='off'] *, html[data-motion='off'] *::before, html[data-motion='off'] *::after { animation: none !important; transition: none !important; }
+
+.scramble-letter { display: inline-block; transition: transform .14s ease-out; }
